@@ -1,0 +1,31 @@
+.header {
+    height: 90px;
+    background-color: #303442;
+    .header__wrapper {
+        margin: 0 40px;
+    }
+}
+
+.header__wrapper__nav {
+    a {
+        font-size: 20px;
+        margin: 0 10px;
+        font-family: monospace;
+    }
+}
+
+
+.header__wrapper__icon--btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: hsla(0,0%,100%,.1);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i {
+        font-size: 2.5rem;
+    }
+}
