@@ -1,0 +1,57 @@
+.home {
+    // height: 500px;
+}
+
+// .slide {
+//     max-height: 900px;
+//     background-color: black;
+//     opacity: 0.95;
+//     position: relative;
+
+//     .slide-bg {
+//         position: absolute;
+//         top: 0;
+//         bottom: 0;
+//         left: 0;
+//         right: 0;
+//         background-color: #040128;
+//         opacity: 0.4;
+//         z-index: 100;
+//     }
+// }
+
+.img {
+    width: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+   
+    
+
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    background-position: center;
+    
+    border-radius: 50%;
+
+    &::after{
+        display: none;
+    }
+   
+}
+
+
+
+
+
+// .swiper-button-next {
+//     background-image: url('../../assets/images/right-arrow.png');
+//     right: 30px;
+//     // display: none;
+// }
+
+// .swiper-button-prev {
+//     background-image: url('../../assets/images/left-arrow.png');
+//     left: 30px;
+// }

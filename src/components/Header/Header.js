@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
-
+import SearchIcon from '@mui/icons-material/Search';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import logo from "../../assets/images/logo2.png";
 import "./Header.scss";
 const nav__links = [
@@ -65,10 +66,10 @@ const Header = () => {
         </div>{" "}
         <div className="header__wrapper__icon col-lg-1 col-md-3 p-0  d-flex justify-content-around">
           <div className="header__wrapper__icon__search header__wrapper__icon--btn">
-            <i className="ri-search-line"> </i>{" "}
+            <SearchIcon sx={{ fontSize: 35 }}/>
           </div>{" "}
           <div className="header__wrapper__icon__cart header__wrapper__icon--btn">
-            <i className="ri-shopping-cart-2-line"> </i>{" "}
+            <ShoppingCartIcon sx={{ fontSize: 30 }}/>
           </div>{" "}
         </div>{" "}
       </div>{" "}
