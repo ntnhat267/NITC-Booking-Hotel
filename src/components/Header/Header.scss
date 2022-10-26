@@ -50,8 +50,8 @@
 
 
 .header__wrapper__icon--btn {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: hsla(0,0%,100%,.1);
     color: white;
@@ -63,16 +63,6 @@
         font-size: 2.5rem;
     }
 }
-
-.header__wrapper__icon__login {
-    display: flex;
-    align-items: center;
-    h2 {
-        color: white;
-        font-size: 20px;
-    }
-}
-
 @media only screen and (min-width: 1122px) {
     .header__wrapper__img {
         width: 250px !important;
@@ -86,22 +76,17 @@
     .header__wrapper__nav {
         display: none !important;
       }
-    .header__wrapper__icon__login {
-        display: none !important;
-    }
-    .header {
-        .header__wrapper {
-        margin: 0 10px;
-    }
-    }
+    
+      .header {
+          .header__wrapper {
+            margin: 0 10px;
+        }
+      }
 }
 
-// @media only screen and (min-width: 1100px) and (max-width: 1200px) {
-//     .header__wrapper__icon--btn {
-//         width: 40px;
-//         height: 40px;
-//     }
-// }
+@media only screen and (min-width: 769px) and (max-width: 1123px) {
+  
+}
 
 @media only screen and (max-width: 768px) { 
     .header {

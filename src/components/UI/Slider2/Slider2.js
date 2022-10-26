@@ -8,7 +8,7 @@ const Slider2 = ({slide}) => {
     return ( 
         <div className='slide2'>
             <div className='slide2__wrapper  d-flex'>
-                <div className='slide2__wrapper--mobile d-flex w-100 '>
+                <div className='d-flex  '>
                     <div className='slide2__wrapper__img'>
                         <img src={slide.slide} className='img' alt="img"/>
                     </div>
