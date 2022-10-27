@@ -22,7 +22,9 @@
 
 .header__wrapper__menu {
     color: white;
-    // background-color: #fc4c4c;
+    svg {
+        cursor: pointer;
+    }
 }
 
 .header__wrapper__nav {
@@ -43,8 +45,7 @@
 
 .header__wrapper__icon {
     .header__wrapper__icon__search {
-        margin-right: 10px;
-        
+       
     }
 }
 
@@ -58,7 +59,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin-right: 10px;
+        cursor: pointer;
     i {
         font-size: 2.5rem;
     }
@@ -69,21 +71,59 @@
     align-items: center;
     h2 {
         color: white;
-        font-size: 20px;
+        font-size: 15px;
     }
 }
 
-@media only screen and (min-width: 1122px) {
+.header__wrapper__icon__tumbler {
+    position: relative;
+    margin-right: 10px;
+    background-color: hsla(0,0%,100%,.1);
+    border-radius: 34px;
+    .tumbler {
+        position: absolute;
+       
+        border-radius: 50%;
+        background-color: #fff;
+        transition: transform 0.5s, background-color 0.5s;
+        will-change: transform;
+    
+        transform: translateX(-20px);
+    }
+    .tumbler.tumbler--dark-mode {
+        transform: translateX(calc(100% - 11px))
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 1201px) {
     .header__wrapper__img {
         width: 250px !important;
     }
     .header__wrapper__menu {
         display: none;
     }
+    .header__wrapper__icon__tumbler {
+        width: 90px;
+        display: flex;
+        justify-content: space-around;
+        .tumbler {
+            height: 30px;
+            width: 30px;
+        }
+    }
 }
 //tablet moblie
-@media only screen and (max-width: 1123px) {
-    .header__wrapper__nav {
+@media only screen and (max-width: 1200px) {
+    // .header {
+    //     height: 100px;
+    // }
+    .header__wrapper__nav, .header__wrapper__icon__search, .header__wrapper__icon__tumbler {
         display: none !important;
       }
     .header__wrapper__icon__login {
@@ -92,7 +132,20 @@
     .header {
         .header__wrapper {
         margin: 0 10px;
+        }
     }
+    .header__wrapper__icon__tumbler {
+        width: 60px;
+        display: flex;
+        justify-content: space-around;
+        .tumbler {
+            height: 25px;
+            width: 25px;
+            transform: translateX(-14px);
+        }
+        .tumbler.tumbler--dark-mode {
+            transform: translateX(calc(100% - 10px))
+        }
     }
 }
 
@@ -114,5 +167,10 @@
     .header__wrapper__icon--btn {
         width: 30px;
         height: 30px;
+    }
+    .header__wrapper__icon__tumbler .tumbler {
+        height: 20px;
+        width: 20px;
+        transform: translateX(-10px);
     }
 }

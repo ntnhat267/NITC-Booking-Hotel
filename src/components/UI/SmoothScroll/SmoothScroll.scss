@@ -1,0 +1,19 @@
+.smoothscroll {
+    position: fixed;
+    bottom: 5%;
+    z-index: 100000000;
+    right: 2%;
+
+    .smoothscroll__wrapper {
+        padding:10px;
+        border-radius: 50%;
+        color: white;
+        cursor: pointer;
+        border: 2px solid #fc4c4c;
+        background-color: rgba(252,76,76,.7);
+
+        &:hover {
+            background-color: #fc4c4c;
+        }
+    }
+}
