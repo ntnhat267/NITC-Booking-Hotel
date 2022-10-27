@@ -1,25 +1,19 @@
 .slide2 {
     height: 450px;
     // margin: 120px 0;
-    background-color: #fff;
+   
     .slide2__wrapper {
         margin: auto;
         height: 430px;
         max-width: 1320px;
         border-radius: 20px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 8px 1px ;
+        background-color: #fff;
     }
     
 }
 
-.swiper-slide-active {
-    .slide2__wrapper {
-        // box-shadow: rgba(100, 100, 111, 0.2) 1px 1px 1px 1px ;
-        
-    
-        // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    }
-}
+
 
 .slide2__wrapper__img {
     width: 430px;

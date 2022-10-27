@@ -1,0 +1,188 @@
+.footer {
+    background: #303443;
+    overflow: hidden;
+    position: relative;
+    font-size: 15px;
+    box-sizing: border-box;
+
+    .upper-footer{
+        padding: 90px 0;
+    }
+     .container {
+        position: relative;
+    }
+    
+    
+    
+     .about-widget {
+        .logo {
+            max-width: 180px;
+        }
+    
+        p {
+            line-height: 1.9em;
+            margin-bottom: 0.8em;
+            font-size: 16px;
+        }
+    
+        ul {
+            padding-top: 10px;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            padding-right: 36px;
+            padding-left: 0 !important;
+        }
+    
+        ul li:hover {
+            opacity: 0.5;
+        }
+    
+    }
+    
+     .widget-title {
+        margin-bottom: 30px;
+    
+        h3 {
+            color: #fff;
+            font-size: 18px;
+            margin: 0;
+            position: relative;
+            text-transform: uppercase;
+        }
+    }
+    
+    img {
+        max-width: 100%;
+        vertical-align: middle;
+    }
+    
+    ul {
+        padding-left: 0;
+        margin: 0;
+    }
+    
+     li,  p {
+        color: #fff;
+    }
+    
+     .link-widget {
+        overflow: hidden;
+        padding-left: 75px;
+    
+        h3 {
+            color: #fff;
+            font-size: 18px;
+            margin: 0;
+            position: relative;
+            text-transform: uppercase;
+        }
+    
+        ul li {
+            font-size: 17px;
+            position: relative;
+        }
+    
+        ul li:hover {
+            text-decoration: underline;
+        }
+    }
+    
+     ul {
+        list-style: none;
+        padding-left: 0 !important;
+    }
+    
+     .service-link-widget {
+        padding-left: 70px;
+    }
+    
+     .contact-ft {
+        margin-top: 20px;
+    
+        ul li {
+            color: #e5e3e3;
+            font-size: 17px;
+            padding-bottom: 15px;
+            padding-left: 35px;
+            position: relative;
+            line-height: 1.9em;
+        }
+    }
+    
+     .lower-footer {
+        position: relative;
+        background: #1e2332;
+        text-align: center;
+    
+        .row {
+            padding: 20px 0;
+            position: relative;
+        }
+    
+        .copyright {
+            display: inline-block;
+            font-size: 1.4rem;
+            margin: 0;
+        }
+    }
+    
+    @media only screen and  (max-width: 991px) {
+         .upper-footer {
+            padding: 60px 0 0;
+    
+            .col {
+                margin-bottom: 70px;
+                min-height: 235px;
+            }
+    
+            .link-widget, .service-link-widget {
+                padding-left: 0;
+            }
+        }
+    
+    
+    }
+    
+    // tablet
+    @media only screen and (max-width: 991px) {
+         .upper-footer {
+            padding: 60px 0 0;
+    
+            .col {
+                margin-bottom: 70px;
+                min-height: 235px;
+            }
+    
+            .about-widget,
+            .link-widget, 
+            .service-link-widget {
+                padding: 0 12px;
+            }
+        }
+    
+         .widget-title {
+            margin-bottom: 20px;
+        }
+    
+         .about-widget ul {
+            padding-right: 150px;
+        }
+    }
+    
+    //mobile
+    @media only screen and (max-width: 768px) {
+         .about-widget ul {
+            padding-right: 300px;
+        }
+    
+        .col {
+            margin-bottom: 70px;
+            min-height: 235px;
+        }
+    
+         .lower-footer {
+            height: 62.5px;
+        }
+    }
+}
