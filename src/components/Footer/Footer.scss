@@ -5,7 +5,7 @@
     font-size: 15px;
     box-sizing: border-box;
 
-    .upper-footer,{
+    .upper-footer{
         padding: 90px 0;
     }
 }
@@ -190,4 +190,8 @@ ul {
     .footer .lower-footer {
         height: 62.5px;
     }
+}
+
+.header__wrapper {
+    height: 100px;
 }

@@ -64,4 +64,5 @@ const Destinations = [
         price: '400',
     },
 ]
+
 export default Destinations;

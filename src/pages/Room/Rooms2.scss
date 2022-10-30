@@ -1,0 +1,93 @@
+.room-area {
+    padding-bottom: 90px;
+
+    .room-wrap {
+        .room-item {
+            border-radius: 20px;
+            margin-bottom: 30px;
+            padding: 10px;
+
+            .room-img {
+                border-radius: 10px;
+                overflow: hidden;
+
+                img {
+                    border-radius: 10px;
+                    transform: scale(1);
+                    transition: all 0.3s;
+                }
+            }
+
+            &:hover {
+                .room-img {
+                    img {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+
+            .room-content {
+                padding-top: 20px;
+
+                h2 {
+                    font-size: 30px;
+                    margin-bottom: 15px;
+                    margin-top: 10px;
+                    color: #303443;
+                    font-weight: 700;
+
+                    @media  only screen and  (max-width:1400px) {
+                        font-size: 25px;
+                    }
+    
+                    @media  only screen and  (max-width:1200px) {
+                        font-size: 23px;
+                    }
+
+                    
+                }
+
+                ul {
+                    list-style: none;
+                    display: flex;
+                    margin-bottom: 15px;
+                    padding: 0;
+
+                    li {
+                        align-items: center;
+                        color: #777;
+                        display: flex;
+                        font-size: 18px;
+
+
+        
+                        @media  only screen and  (max-width: 1200px) {
+                            font-size: 14px;
+                        }
+                    }
+
+                    li+li {
+                        margin-left: 15px;
+                    }
+                    
+                }
+
+                h3 {
+                    color: #fc4c4c;
+                    font-size: 35px;
+                    font-weight: 700;
+
+                    span {
+                        color: #585858;
+                        font-size: 20px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section-bg {
+    background: #f3f8fc;
+}
