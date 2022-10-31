@@ -17,6 +17,8 @@ import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
 import logo from "../../assets/images/logo2.png";
 
 import "./Header.scss";
@@ -106,8 +108,15 @@ const Header = () => {
               <DarkModeIcon sx={{ fontSize: { xs: 20, lg: 25 } }}/>
             </div>
           </div>
-          <div className="header__wrapper__icon__search header__wrapper__icon--btn ">
-            <SearchIcon sx={{ fontSize: { xs: 20, lg: 25 } }} />
+          <div className="header__wrapper__icon__search  ">
+            {/* <input type="text" class="input-search" placeholder="Type to Search..."/> */}
+            <Box sx={{ display: 'flex', alignItems: 'center' }}>
+              <SearchIcon sx={{ fontSize: { xs: 20, lg: 25 } }} />
+              <input placeholder="Search ..."/>
+            </Box>
+            
+            <div class="btn-search">
+            </div>
           </div>
           <div className="header__wrapper__icon__cart header__wrapper__icon--btn"  onClick={HandleShowCartUi}>
             <ShoppingCartIcon sx={{ fontSize: { xs: 20, lg: 25 } }} />
