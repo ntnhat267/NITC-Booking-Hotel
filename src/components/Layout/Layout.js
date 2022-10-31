@@ -17,6 +17,10 @@ const Layout = () => {
     const styleDarkMode = {
         background: "black",
       };
+      
+
+
+
     return ( 
     <div className='app__wrapper' style={isDarkMode ? styleDarkMode : undefined }>
        <Header/>

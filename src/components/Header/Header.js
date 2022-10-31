@@ -115,8 +115,8 @@ const Header = () => {
               <input placeholder="Search ..."/>
             </Box>
             
-            <div class="btn-search">
-            </div>
+            {/* <div class="btn-search">
+            </div> */}
           </div>
           <div className="header__wrapper__icon__cart header__wrapper__icon--btn"  onClick={HandleShowCartUi}>
             <ShoppingCartIcon sx={{ fontSize: { xs: 20, lg: 25 } }} />

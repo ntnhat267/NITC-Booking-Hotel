@@ -36,11 +36,11 @@ const ExclusiveOffer = () => {
                     </li>
                   </ul>
                 </div>
-                <div class="exclusiveoffer-info-right">
+                <div className="exclusiveoffer-info-right">
                   <p>Only</p>
                   <h3>$2500</h3>
                 </div>
-                <a class="theme-btn" href="/room">
+                <a className="theme-btn" href="/room">
                   Book Now
                 </a>
               </div>
