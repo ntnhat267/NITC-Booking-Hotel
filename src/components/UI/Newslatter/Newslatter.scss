@@ -1,0 +1,85 @@
+.newslatter-section {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+    .section-title-s2 {
+        text-align: center;
+        margin-bottom: 60px;
+
+        h2 {
+            font-size: 40px;
+            line-height: 40px;
+            font-weight: 700;
+            margin: 0 0 20px;
+            position: relative;
+            text-transform: capitalize;
+        }
+
+        p {
+            font-size: 18px;
+            max-width: 540px;
+            margin: 0 auto;
+            color: #687693;
+        }
+    }
+
+    .newsletter {
+        margin: 0 auto;
+        max-width: 870px;
+
+        .newsletter-form {
+            position: relative;
+
+            input {
+                background: #fff;
+                border: 0;
+                border-radius: 45px;
+                box-shadow: 0 1px 13.5px 1.5px rgb(46 49 108 / 8%);
+                font-size: 22px;
+                height: 90px;
+                padding: 10px 50px;
+            }
+
+            button {
+                background: #fc4c4c;
+                border: 0;
+                border-bottom-right-radius: 45px;
+                border-top-right-radius: 45px;
+                color: #fff;
+                font-size: 22px;
+                height: 90px;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 200px;
+            }
+        }
+    }
+
+    .n-shape {
+        left: -15px;
+        opacity: .5;
+        position: absolute;
+        top: -33%;
+        z-index: -1;
+    }
+
+    .n-shape2 {
+        right: -15%;
+        bottom: -22%;
+        opacity: .5;
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+.section-padding {
+    padding: 120px 0;
+}
+
+@media only screen and (max-width: 767px){
+    .section-padding {
+        padding: 80px 0;
+    }
+}
