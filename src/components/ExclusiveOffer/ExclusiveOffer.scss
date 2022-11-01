@@ -1,0 +1,93 @@
+.homebody {
+  background: url("../../assets/images/homeEO-back.jpg") no-repeat 50%;
+  background-size: cover;
+  padding: 120px 0;
+}
+
+.exclusiveoffer-content {
+  background-color: white;
+  padding: 50px 20px 20px;
+  .exclusiveoffer-title span {
+    color: #fc4c4c;
+    font-family: "Futura PT", sans-serif;
+    font-size: 15px;
+    font-weight:600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+}
+.exclusiveoffer-content h2 {
+  font-family: "Futura PT", sans-serif;
+  font-size: 35px;
+  line-height: 55px;
+  color: #303443;
+  font-weight: 900;
+  margin-top: 0;
+}
+.exclusiveoffer-content-inner{
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+.exclusiveoffer-info-wrap{
+  display:flex;
+  margin-top: 5px;
+  width:100%;
+}
+.exclusiveoffer-info-left{
+    padding: 8px 0px -20px 20px;
+    border-right: 1px solid #d3d3d3;
+    padding-right:30px;
+
+   
+}
+.exclusiveoffer-info-left p {
+    padding-left: -10px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Muli',sans-serif;
+}
+.exclusiveoffer-info-left ul{
+    display:flex;
+    color: red;
+    padding-left: 2px;
+}
+.exclusiveoffer-info-left li{
+  padding-left: 5px;
+}
+.exclusiveoffer-info-left span{
+    color: black;
+}
+.offset-lg-4{
+  margin-left: 35%;
+}
+.col-lg-6{
+  width:50%;
+}
+.col-xl-5{
+  width: 42%;
+}
+
+.exclusiveoffer-info-right{
+  padding-left: 30px;
+}
+.exclusiveoffer-info-right p{
+  font-size:16px;
+  color: #687693;
+  line-height: 1.1em;
+  font-weight: 600;
+}
+.exclusiveoffer-info-right h3{
+  font-family: "Futura PT", sans-serif;
+  color: #fc4c4c;
+  font-size: 27px;
+  font-weight: 600;
+}
+.theme-btn{
+  background: #fc4c4c;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: 30px;
+  padding: 17px 50px 0px 50px;
+  border-radius: 6px;
+}
