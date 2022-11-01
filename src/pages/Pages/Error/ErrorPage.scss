@@ -1,0 +1,39 @@
+.error-404-section {
+	text-align: center;
+
+	.error {
+		margin: 0 auto
+	}
+
+	.error-message {
+		margin-top: 70px;
+		padding: 0 200px;
+
+		@media  only screen and  (max-width: 991px) {
+			margin-top: 50px;
+			padding: 0 100px;
+		}
+
+		@media  only screen and  (max-width: 767px) {
+			padding: 0;
+		}
+
+		h3 {
+			font-size: 30px !important;
+			font-size: 2rem;
+			margin: 0 0 0.8em;
+			color: #303443;
+			font-weight: 700;
+			line-height: 1.2;
+		}
+
+		p {
+			margin-bottom: 1.8em;
+			color: #687693;
+			font-size: 16px;
+			line-height: 1.8em;
+			margin-top: 0;
+		}
+	}
+
+}

@@ -8,6 +8,7 @@ import Destination from '../pages/Destination/Destination';
 import Home from '../pages/Home/Home';
 import Pages from '../pages/Pages/Pages';
 import Room from '../pages/Room/Room';
+import Error  from 'pages/Pages/Error/Error';
 
 
 const Routers = () => {
@@ -22,6 +23,7 @@ const Routers = () => {
                 <Route path='/pages' element={<Pages/>}></Route>
                 <Route path='/blog' element={<Blog/>}></Route>
                 <Route path='/contact' element={<Contact/>}></Route>
+                <Route path='/error' element={<Error/>}></Route>
 
             </Routes>
 

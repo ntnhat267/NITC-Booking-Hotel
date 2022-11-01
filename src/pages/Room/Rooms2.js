@@ -98,7 +98,7 @@ const Rooms2 = () => {
                                             <ul>
                                                 <li><AllOutIcon style={{ marginRight: "10px", fontSize: "20px" }} />{product.sqm} sqm</li>
                                                 <li><BedIcon style={{ marginRight: "10px", fontSize: "20px" }} />{product.bedroom} Bed</li>
-                                                <li><BathtubIcon style={{ marginRight: "10px", fontSize: "20px" }} />{product.bathroom} Bathroom</li>
+                                                <li><Bathtub style={{ marginRight: "10px", fontSize: "20px" }} />{product.bathroom} Bathroom</li>
                                             </ul>
                                             <h3>${product.price} <span>/ Night</span></h3>
                                         </div>
