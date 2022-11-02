@@ -15,7 +15,7 @@
     letter-spacing: 3px;
     text-transform: uppercase;
   }
-}
+}  
 .exclusiveoffer-content h2 {
   font-family: "Futura PT", sans-serif;
   font-size: 35px;
@@ -90,4 +90,8 @@
   margin-left: 30px;
   padding: 17px 50px 0px 50px;
   border-radius: 6px;
+}
+.theme-btn:hover{
+  background:red;
+  color:#fff;
 }
