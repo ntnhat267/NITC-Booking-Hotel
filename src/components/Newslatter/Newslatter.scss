@@ -41,6 +41,14 @@
                 padding: 10px 50px;
             }
 
+            @media only screen and (max-width:560px) {
+                input {
+                    height: 50px;
+                    font-size: 18px;
+                    text-align: center;
+                }
+            }
+
             button {
                 background: #fc4c4c;
                 border: 0;
@@ -53,6 +61,14 @@
                 right: 0;
                 top: 0;
                 width: 200px;
+
+                @media only screen and (max-width:560px) {
+                    position: relative;
+                    width: 100%;
+                    margin-top: 20px;
+                    border-radius: 35px;
+                    height: 50px;
+                }
             }
         }
     }
