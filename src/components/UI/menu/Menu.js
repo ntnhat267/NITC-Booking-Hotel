@@ -22,7 +22,9 @@ function Menu({transform, opacity}) {
 
     const HandleShowCartUi = () => {
         dispatch(menuActions.toggleMenu());
+        window.scrollTo(10, 0);
       };
+    
 
     return (
         <div className='menu'  style={{transform:transform, opacity:opacity}}>
@@ -50,6 +52,7 @@ function Menu({transform, opacity}) {
                             to={item.path} 
                             key={index} 
                             style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                            onClick={HandleShowCartUi}
                             end
                         >
                             <p className='menu__nav--item'> {item.display}</p>

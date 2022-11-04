@@ -34,4 +34,21 @@
         // color: #585858!important;
         font-size: 20px;
     }
+
+    @media only screen and (max-width: 992px) {
+        .information__wrapper--item:nth-of-type(2n)::after {
+            display: none;
+        }
+        h3 {
+            // color: #303443;
+            font-size: 45px;
+        
+            font-weight: 700;
+        }
+        p {
+            // color: #585858!important;
+            font-size: 16px;
+        }
+
+    }
 }
