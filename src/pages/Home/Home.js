@@ -8,7 +8,7 @@ import { Slides2 } from 'assets/data/Slides2';
 import ExclusiveOffer from './component/ExclusiveOffer/ExclusiveOffer';
 import Information from 'components/UI/Information/Information';
 import Newslatter from 'components/UI/Newslatter/Newslatter';
-import { Row } from 'reactstrap';
+// import { Row } from 'reactstrap';
 
 const Home = () => {
     return ( 

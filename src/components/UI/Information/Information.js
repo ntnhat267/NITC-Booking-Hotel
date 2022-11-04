@@ -10,7 +10,7 @@ const Information = ({urlBg, color}) => {
     <div className='information' style={{background: `url(${urlBg}) no-repeat 50%`, backgroundAttachment: "fixed",backgroundSize: 'cover', position:'relative', height:"500px" }}>
         <div className='information__wrapper row m-0' style={{color:`${color}`,position: "absolute",inset: 0}}>
             <div className='information__wrapper--list  row d-flex align-items-center'>
-                <div className='grid col col-xl-3 information__wrapper--item'>
+                <div className='grid col-6 col-lg-3 col-md-6 col-sm-6 information__wrapper--item'>
                     <ScrollTrigger 
                         onEnter={()=> setCount(true)}
                         // onExit={()=> setCount(false)}
@@ -22,18 +22,18 @@ const Information = ({urlBg, color}) => {
                     </ScrollTrigger>
                     <p>Room & Suites</p>
                 </div >
-                <div className='grid col col-xl-3 information__wrapper--item'>
+                <div className='grid col-6 col-lg-3 col-md-6 col-sm-6 information__wrapper--item'>
                     <h3> {count && <CountUp start={0} end={25} duration={1.5} decimal={100} delay={0}></CountUp>}</h3>
                     <p>Restaurant</p>
                 </div>
-                <div className='grid col col-xl-3 information__wrapper--item'>
+                <div className='grid col-6 col-lg-3 col-md-6 col-sm-6 information__wrapper--item'>
                     <h3>
                         {count && <CountUp start={400} end={510} duration={1.5} decimal={100} delay={0}></CountUp>}    
                         +
                     </h3>
                     <p>Exceptional Food</p>
                 </div>
-                <div className='grid col col-xl-3 information__wrapper--item'>
+                <div className='grid col-6 col-lg-3 col-md-6 col-sm-6 information__wrapper--item'>
                     <h3> {count && <CountUp start={0} end={35} duration={1.5} decimal={100} delay={0}></CountUp>}</h3>
                     <p>Destination</p>
                 </div>

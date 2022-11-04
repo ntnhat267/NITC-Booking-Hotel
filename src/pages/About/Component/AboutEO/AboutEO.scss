@@ -1,0 +1,144 @@
+.aboutEO-padding {
+    padding: 120px 0;
+    box-sizing: border-box;
+}
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media(min-width: 992px){
+    .container{
+      max-width: 960px;
+    }
+  }
+  .row-aboutEO-center {
+    align-items: center;
+  }
+  @media (min-width: 992px) {
+    .col-lg-6 {
+      flex: 0 0 auto;
+      width: 50%;
+    }
+  }
+  @media (min-width: 768px) {
+    .col-md-12 {
+      flex: 0 0 auto;
+      width: 50%;
+    }
+  }
+  .col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .aboutEO-img img{
+      width:100%;
+      border-radius: 13px;
+  }
+  @media(max-width:1200px) {
+      .aboutEO-content{
+          padding-left: 15px;
+      }  
+  }
+  .aboutEO-content{
+    padding-left: 50px;
+  }
+  .theme-btn{
+    background: #fc4c4c;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 30px;
+    padding: 17px 50px 17px 50px;
+    border-radius: 8px;
+  }
+  .theme-btn:hover{
+    background:red;
+    color:#fff;
+  }
+  .aboutEO-content {
+    background-color: white;
+    padding: 50px 20px 20px 50px;
+    .aboutEO-title span {
+      color: #fc4c4c;
+      font-family: "Futura PT", sans-serif;
+      font-size: 15px;
+      font-weight:600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+  } 
+  .aboutEO-content h2 {
+    font-family: "Futura PT", sans-serif;
+    font-size: 35px;
+    line-height: 55px;
+    color: #303443;
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  .aboutEO-content-inner{
+    color: #687693;
+    font-size:17px;
+    line-height: 1.9em;
+  }
+  .aboutEO-info-wrap{
+    display:flex;
+    padding-top:30px;
+    padding-bottom: 30px;
+  }
+  // .about-info-left p{
+  //   padding-top: 40px;
+  // }
+  .aboutEO-info-left{
+    padding: 2px 0px 0px 2px;
+    border-right: 1px solid #d3d3d3;
+    padding-right:30px;
+  
+   
+  }
+  .aboutEO-info-left p {
+    padding-left: 0px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Muli',sans-serif;
+    color:#303443;
+  }
+  .aboutEO-info-left ul{
+    display:flex;
+    color: red;
+    padding-left: 0px;
+  }
+  .aboutEO-info-left li{
+  padding-left: 5px;
+  }
+  .aboutEO-info-left span{
+    color: black;
+  }
+  .aboutEO-info-right{
+    padding-left: 30px;
+  }
+  .aboutEO-info-right p{
+    font-size:16px;
+    color: #687693;
+    line-height: 1.1em;
+    font-weight: 600;
+  }
+  .aboutEO-info-right h3{
+    font-family: "Futura PT", sans-serif;
+    color: #fc4c4c;
+    font-size: 27px;
+    font-weight: 600;
+  }
+  .aboutEO-theme-btn{
+    background: #fc4c4c;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 17px 50px 20px 50px;
+    border-radius: 6px;
+  }
+  .aboutEO-theme-btn:hover{
+    background:red;
+    color:#fff;
+  }
