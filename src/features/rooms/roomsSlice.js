@@ -43,8 +43,6 @@ export const selectAllRooms = (state) => state.rooms.rooms
 export const getRoomsStatus = (state) => state.rooms.status
 export const getRoomsError = (state) => state.rooms.error
 
-
-
-// export const 
+export const selectRoomById = (state, roomId) => state.rooms.rooms.find(room => room.id === roomId)
 
 export default roomsSlice.reducer

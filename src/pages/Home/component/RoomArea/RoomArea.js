@@ -3,10 +3,6 @@ import React from 'react';
 import { Col, Container, Row } from 'reactstrap';
 
 function RoomArea(props) {
-
-
-
-
     return (
         <Container className=' section-padding'>
            <Row className='align-items-center justify-content-center'>
