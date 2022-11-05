@@ -8,6 +8,8 @@ import { Slides2 } from 'assets/data/Slides2';
 import ExclusiveOffer from './component/ExclusiveOffer/ExclusiveOffer';
 import Information from 'components/UI/Information/Information';
 import Newslatter from 'components/UI/Newslatter/Newslatter';
+import RoomArea from './component/RoomArea/RoomArea';
+
 // import { Row } from 'reactstrap';
 
 const Home = () => {
@@ -15,6 +17,7 @@ const Home = () => {
         <Helmet title="Home" >
             <Slider Slides={Slides1} boolean={"1"} speed={2000}/>
             <ExclusiveOffer/>
+            <RoomArea/>
             <Information/>
             <Slider Slides={Slides2} boolean={"2"} effect={'fade'} speed={1000}/>
             <Newslatter/>

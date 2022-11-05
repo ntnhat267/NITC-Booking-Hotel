@@ -13,7 +13,7 @@ function RoomParent(props) {
 
     const products = [
         {
-            proImg: proImg1,
+            proImg: "http://parador-react.wpocean.com/product/1.jpg",
             id: 1,
             title: "Deluxe Contrast Room",
             sqm: 52,
@@ -80,40 +80,39 @@ function RoomParent(props) {
     ]
     return (
         <div className="room-area section-bg section-padding">
-        <div className="container">
-            <div className="room-wrap">
-                <div className="row">
-                    {products.length > 0 &&
-                        products.slice(0, 6).map((product, pitem) => (
-                            <div className="col-lg-4 col-md-6 col-12" key={pitem}>
-                                <div className="room-item">
-                                    <div className="room-img">
-                                        <img src={product.proImg} alt="" />
-                                    </div>
-                                    <div className="room-content">
-                                        <h2><Link
-                                            onClick={ClickHandler}
-                                            to={`/room-single/${product.id}`}
-                                            style={{ color: "#303443" }}
-                                            onMouseOver={(e) => { e.target.style.color = '#fc4c4c' }}
-                                            onMouseLeave={(e) => { e.target.style.color = '#303443' }}
-                                        >{product.title}</Link></h2>
-                                        <ul>
-                                            <li><AllOutIcon style={{ marginRight: "10px", fontSize: "20px" }} />{product.sqm} sqm</li>
-                                            <li><BedIcon style={{ marginRight: "10px", fontSize: "20px" }} />{product.bedroom} Bed</li>
-                                            <li><BathtubIcon style={{ marginRight: "10px", fontSize: "20px" }} />{product.bathroom} Bathroom</li>
-                                        </ul>
-                                        <h3>${product.price} <span>/ Night</span></h3>
+            <div className="container">
+                <div className="room-wrap">
+                    <div className="row">
+                        {products.length > 0 &&
+                            products.slice(0, 6).map((product, pitem) => (
+                                <div className="col-lg-4 col-md-6 col-12" key={pitem}>
+                                    <div className="room-item">
+                                        <div className="room-img">
+                                            <img src={product.proImg} alt="" />
+                                        </div>
+                                        <div className="room-content">
+                                            <h2><Link
+                                                onClick={ClickHandler}
+                                                to={`/room-single/${product.id}`}
+                                                style={{ color: "#303443" }}
+                                                onMouseOver={(e) => { e.target.style.color = '#fc4c4c' }}
+                                                onMouseLeave={(e) => { e.target.style.color = '#303443' }}
+                                            >{product.title}</Link></h2>
+                                            <ul>
+                                                <li><AllOutIcon style={{ marginRight: "10px", fontSize: "20px" }} />{product.sqm} sqm</li>
+                                                <li><BedIcon style={{ marginRight: "10px", fontSize: "20px" }} />{product.bedroom} Bed</li>
+                                                <li><BathtubIcon style={{ marginRight: "10px", fontSize: "20px" }} />{product.bathroom} Bathroom</li>
+                                            </ul>
+                                            <h3>${product.price} <span>/ Night</span></h3>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        ))}
+                            ))}
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-);
-
+    );
 }
 
 export default RoomParent;
