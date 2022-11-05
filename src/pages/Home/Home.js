@@ -9,17 +9,19 @@ import ExclusiveOffer from './component/ExclusiveOffer/ExclusiveOffer';
 import Information from 'components/UI/Information/Information';
 import Newslatter from 'components/UI/Newslatter/Newslatter';
 import RoomArea from './component/RoomArea/RoomArea';
+import ServicesList from 'features/service/ServicesList';
 
 // import { Row } from 'reactstrap';
 
 const Home = () => {
     return ( 
         <Helmet title="Home" >
-            <Slider Slides={Slides1} boolean={"1"} speed={2000}/>
+            <Slider Slides={Slides1} boolean={"1"} speed={2000} />
             <ExclusiveOffer/>
             <RoomArea/>
+            <ServicesList/>
             <Information/>
-            <Slider Slides={Slides2} boolean={"2"} effect={'fade'} speed={1000}/>
+            <Slider Slides={Slides2} boolean={"2"} effect={'fade'} speed={1000}  />
             <Newslatter/>
 
         </Helmet>
