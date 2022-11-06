@@ -1,12 +1,22 @@
 .swiper-slide3 {
     .slide {
         position: relative;
+
+        .slide__img {
+            height: 362px;
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+
         .slide__content {
             position: absolute;
             top: 50%;
             left: 50%;
             height: 150px;
-            background-color: rgba(255, 255, 255, 0.549);
+            background: hsla(0,0%,100%,.9);
             transform: translate(-50%,-50%);
             width: 210px;
         }
@@ -16,10 +26,16 @@
     .slide__content {
         a {
             color: #303443;
+            font-size: 20px;
+            font-weight: 500;
+
+            &:hover {
+                color: #fc4c4c;
+            }
         }
 
         .slide__content--img {
-            width: 50%;
+            width: 30%;
             img {
                 width: 100%;
             }

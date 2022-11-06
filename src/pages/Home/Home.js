@@ -1,17 +1,18 @@
+import React from 'react';
+
 import { Slides1 } from 'assets/data/Slides1';
+import { Slides2 } from 'assets/data/Slides2';
 import Helmet from 'components/Helmet/Helmet';
 import Slider from 'components/UI/Slider/Slider';
-import './Home.scss'
-import React from 'react';
 import Slider2 from 'components/UI/Slider2/Slider2';
-import { Slides2 } from 'assets/data/Slides2';
 import ExclusiveOffer from './component/ExclusiveOffer/ExclusiveOffer';
 import Information from 'components/UI/Information/Information';
 import Newslatter from 'components/UI/Newslatter/Newslatter';
 import RoomArea from './component/RoomArea/RoomArea';
 import ServicesList from 'features/service/ServicesList';
 
-// import { Row } from 'reactstrap';
+import './Home.scss'
+
 
 const Home = () => {
     return ( 
