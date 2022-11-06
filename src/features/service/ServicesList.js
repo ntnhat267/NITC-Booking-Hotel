@@ -28,7 +28,20 @@ function ServicesList() {
     } else if (servicesStatus === 'succeeded') {
     let newServices = services.slice(0,7)
     console.log(newServices);
-    content = <Slider Slides={newServices} boolean={"3"}  speed={1000} slidesPerView={"4"}></Slider>
+    content = <Slider 
+                Slides={newServices} 
+                boolean={"3"}  
+                speed={1000} 
+                // slidesPerView={"4"}
+                breakpoints={{
+                    1250 : { slidesPerView: 4},
+                    1000: {slidesPerView: 3},
+                    800: {slidesPerView: 2},
+                    500: {slidesPerView: 1},
+                    
+
+                }}
+            ></Slider>
 
 
     }

@@ -13,16 +13,17 @@ import SLider1 from '../Slider1/SLider1';
 import Slider2 from '../Slider2/Slider2';
 import SLider3 from '../Slider3/SLider3';
 
-const Slider = ({Slides, effect,boolean, speed, slidesPerView}) => {
+const Slider = ({Slides, effect,boolean, speed, slidesPerView, breakpoints}) => {
    
     
-   
+   console.log(breakpoints);
 
     return ( 
         <div className={boolean==="1" ? 'swiper-slide1' : boolean==="2" ? 'swiper-slide2' : 'swiper-slide3'}>
             <Swiper
             autoplay={{delay:10000}}
             slidesPerView={slidesPerView}
+            breakpoints={breakpoints}
             spaceBetween={0}
             speed={speed}
             effect={effect}
