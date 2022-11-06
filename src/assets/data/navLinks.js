@@ -12,13 +12,9 @@ export const nav__links = [
       path: "/blog",
     },
     {
-      display: "Destination",
-      path: "/destination",
+      display: "Service",
+      path: "/service",
     },
-    // {
-    //   display: "Pages",
-    //   path: "/pages",
-    // },
     {
       display: "Room",
       path: "/room",

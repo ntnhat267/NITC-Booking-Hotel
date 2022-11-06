@@ -1,5 +1,3 @@
-import Error from 'pages/Error/Error';
-import RoomSingle from 'pages/RoomSingle/RoomSingle';
 import React from 'react';
 import {Routes, Route, Navigate} from 'react-router-dom'
 
@@ -8,8 +6,11 @@ import Blog from '../pages/Blog/Blog';
 import Contact from '../pages/Contact/Contact';
 import Destination from '../pages/Destination/Destination';
 import Home from '../pages/Home/Home';
-import Pages from '../pages/Pages/Pages';
 import Room from '../pages/Room/Room';
+import Error from 'pages/Error/Error';
+import RoomSingle from 'pages/RoomSingle/RoomSingle';
+import Service from 'pages/Service/Service';
+import ServiceSingle from 'pages/ServiceSingle/ServiceSingle';
 
 
 const Routers = () => {
@@ -22,7 +23,8 @@ const Routers = () => {
                 <Route path='/room' element={<Room/>}></Route>
                 <Route path='/room/:roomId' element={<RoomSingle/>}></Route>
                 <Route path='/destination' element={<Destination/>}></Route>
-                <Route path='/pages' element={<Pages/>}></Route>
+                <Route path='/service' element={<Service/>}></Route>
+                <Route path='/service/:serviceId' element={<ServiceSingle/>}></Route>
                 <Route path='/blog' element={<Blog/>}></Route>
                 <Route path='/contact' element={<Contact/>}></Route>
                 <Route path='/*' element={ <Error/>}></Route>

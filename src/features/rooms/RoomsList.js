@@ -1,3 +1,4 @@
+import Loading from 'components/UI/Loading/Loading'
 import RoomItem from 'components/UI/RoomItem/RoomItem'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
@@ -24,7 +25,7 @@ const RoomsList = ({hot}) => {
     let content;
 
     if(roomsStatus === 'loading') {
-        console.log('loading');
+        content = <Loading/>
     } else if (roomsStatus === 'succeeded'){
         console.log('succeeded');
         let newRooms = rooms;
@@ -32,10 +33,11 @@ const RoomsList = ({hot}) => {
             newRooms = rooms.slice(0,3)
         }
         
-        content = newRooms.map(room => 
+        let newContent = newRooms.map(room => 
             <Col key={room.id} className='col-lg-4 col-md-6 col-12' >
                 <RoomItem room={room}/>
             </Col>);
+        content =<Row>{newContent}</Row> 
 
     }
     else if (roomsStatus === 'failed') {
@@ -46,9 +48,9 @@ const RoomsList = ({hot}) => {
     return (
         <Container className='room-area section-padding'>
            <div className='room-wrap'>
-                <Row>        
-                    {content}          
-                </Row>
+                {/* <Row>         */}
+                  {content}   
+                {/* </Row> */}
             </div>
         </Container>
     )
