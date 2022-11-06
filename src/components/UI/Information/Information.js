@@ -7,7 +7,7 @@ const Information = ({urlBg, color}) => {
 
     const [count, setCount] = useState(false)
     return ( 
-    <div className='information d-flex justify-content-center w-100' style={{background: `url(${urlBg}) no-repeat 50%`, backgroundAttachment: "fixed",backgroundSize: 'cover',}}>
+    <div className='information d-flex justify-content-center w-100' style={{background: `url(${urlBg}) no-repeat 50%`, backgroundAttachment: "fixed",backgroundSize: 'cover', position:'relative'}}>
         <div className='information__wrapper container m-0' style={{color:`${color}`,inset: 0}}>
             <div className='information__wrapper--list  row d-flex align-items-center'>
                 <div className='grid col-6 col-lg-3 col-md-6 col-sm-6 information__wrapper--item'>

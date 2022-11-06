@@ -32,7 +32,7 @@ function RoomArea(props) {
                     </p>
                 </Col>
            </Row>
-            <RoomsList hot={3}/>
+            <RoomsList main={"main"}/>
         </Container>
     );
 }

@@ -9,7 +9,7 @@ function Service(props) {
     return (
         <Helmet title='Serive'>
             <PageTitle pagetitle={"Service"} pagesub={"Serive"}/>
-            <ServicesList style={{padding: "50px 0"}}/>
+            <ServicesList main={"main"} style={{padding: "50px 0"}}/>
             <Newslatter />
         </Helmet>
     );
