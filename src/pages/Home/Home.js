@@ -18,7 +18,7 @@ const Home = () => {
     return ( 
         <Helmet title="Home" >
             <Slider Slides={Slides1} boolean={"1"} speed={2000} />
-            <ExclusiveOffer/>
+            {/* <ExclusiveOffer/> */}
             <RoomArea/>
             <ServicesList/>
             <Information/>

@@ -63,6 +63,7 @@
 
 .swiper-slide2 {
     padding: 120px 90px;
+    margin-top: 300px;
     // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
     .swiper-button-next,
@@ -193,9 +194,15 @@
             }
         }
 
-        .swiper-slide2 p {
+        p {
             font-size: 13px;
             line-height: 18px;
         }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .swiper-slide2 {
+        padding: 120px 30px;
     }
 }
