@@ -1,5 +1,6 @@
 import Loading from 'components/UI/Loading/Loading'
 import RoomItem from 'components/UI/RoomItem/RoomItem'
+import RoomPagination from 'pages/Room/components/RoomPagination/RoomPagination'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Col, Container, Row } from 'reactstrap'
@@ -7,7 +8,7 @@ import {fetchRooms, getRoomsError, getRoomsStatus, selectAllRooms} from './rooms
 
 
 
-const RoomsList = ({hot}) => {
+const RoomsList = ({main}) => {
 
     const dispatch = useDispatch()
 
@@ -28,17 +29,20 @@ const RoomsList = ({hot}) => {
         content = <Loading/>
     } else if (roomsStatus === 'succeeded'){
         console.log('succeeded');
-        let newRooms = rooms;
-        if(hot) {
-            newRooms = rooms.slice(0,3)
-        }
-        
-        let newContent = newRooms.map(room => 
-            <Col key={room.id} className='col-lg-4 col-md-6 col-12' >
-                <RoomItem room={room}/>
-            </Col>);
-        content =<Row>{newContent}</Row> 
 
+        switch (main) {
+            case "main":
+                content = rooms.slice(0,3).map(room => 
+                     <Col key={room.id} className='col-lg-4 col-md-6 col-12' >
+                        <RoomItem room={room}/>
+                        </Col>)
+                break;
+            case "second":
+                content = <RoomPagination rooms={rooms}/>
+                break;
+            default:
+                break;
+        }
     }
     else if (roomsStatus === 'failed') {
         content = <p>{error}</p>;
@@ -48,9 +52,9 @@ const RoomsList = ({hot}) => {
     return (
         <Container className='room-area section-padding'>
            <div className='room-wrap'>
-                {/* <Row>         */}
+                <Row>        
                   {content}   
-                {/* </Row> */}
+                </Row>
             </div>
         </Container>
     )

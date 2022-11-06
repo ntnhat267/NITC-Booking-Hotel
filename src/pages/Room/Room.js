@@ -7,11 +7,12 @@ import RoomsList from 'features/rooms/RoomsList';
 
 import './Room.scss'
 
+
 const Room = () => {
     return ( 
         <Helmet title='Room'>
             <PageTitle pagetitle={"Room"} pagesub={"Room"} />
-            <RoomsList/>
+            <RoomsList main={"second"}/>
             <Newslatter />
         </Helmet>
      );
