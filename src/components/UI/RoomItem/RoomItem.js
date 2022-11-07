@@ -8,6 +8,7 @@ import BathtubIcon from '@mui/icons-material/Bathtub';
 
 import './RoomItem.scss'
 import { cartActions } from 'features/cart/cartSlice';
+import { toast } from 'react-toastify';
 
 
 function RoomItem({room}) {
@@ -26,6 +27,8 @@ function RoomItem({room}) {
                 id: room.id,  
             })
         )
+
+        toast.success("Room Added to Cart !");
 
     }
 
