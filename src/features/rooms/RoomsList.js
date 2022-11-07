@@ -32,13 +32,17 @@ const RoomsList = ({main}) => {
 
         switch (main) {
             case "main":
-                content = rooms.slice(0,3).map(room => 
-                     <Col key={room.id} className='col-lg-4 col-md-6 col-12' >
-                        <RoomItem room={room}/>
-                        </Col>)
+                content =<Row>
+                     {rooms.slice(0,3).map(room => 
+                        <Col key={room.id} className='col-lg-4 col-md-6 col-12' >
+                            <RoomItem room={room}/>
+                        </Col>)}
+                </Row>
                 break;
             case "second":
-                content = <RoomPagination rooms={rooms}/>
+                content = <Row>
+                    <RoomPagination rooms={rooms}/>
+                </Row>
                 break;
             default:
                 break;
@@ -52,9 +56,9 @@ const RoomsList = ({main}) => {
     return (
         <Container className='room-area section-padding'>
            <div className='room-wrap'>
-                <Row>        
+                {/* <Row>         */}
                   {content}   
-                </Row>
+                {/* </Row> */}
             </div>
         </Container>
     )

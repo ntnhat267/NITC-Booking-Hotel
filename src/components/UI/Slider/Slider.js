@@ -6,7 +6,6 @@ import {  Navigation,Autoplay, EffectFade } from "swiper";
 import "swiper/less/autoplay"
 import "swiper/css/effect-fade";
 import "swiper/css";
-// import "swiper/css/pagination";
 import "swiper/css/navigation"; 
 
 import SLider1 from '../Slider1/SLider1';
@@ -15,9 +14,6 @@ import SLider3 from '../Slider3/SLider3';
 
 const Slider = ({Slides, effect,boolean, speed, slidesPerView, breakpoints}) => {
    
-    
-   console.log(breakpoints);
-
     return ( 
         <div className={boolean==="1" ? 'swiper-slide1' : boolean==="2" ? 'swiper-slide2' : 'swiper-slide3'}>
             <Swiper
@@ -39,7 +35,7 @@ const Slider = ({Slides, effect,boolean, speed, slidesPerView, breakpoints}) => 
                             component = <SLider1 slide={slide}/>
                             break;
                         case "2":
-                            // console.log(slide);
+  
                             component = <Slider2 slide={slide}/>
                             break;    
                         case "3":
@@ -51,7 +47,6 @@ const Slider = ({Slides, effect,boolean, speed, slidesPerView, breakpoints}) => 
                     return (
                         <SwiperSlide className='slidesss' key={index} >
                              {component}
-                          {/* <SLider3/> */}
                         </SwiperSlide>
                 
                 )})}

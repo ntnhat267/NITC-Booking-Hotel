@@ -1,5 +1,5 @@
 .header {
-    z-index: 111111;
+    z-index: 1000;
     height: 90px;
     background-color: transparent;
     /* background-color: #303442; */
@@ -57,6 +57,25 @@
     margin-right: 10px;
     padding: 0 10px;
     }
+
+    .header__wrapper__icon__cart {
+        position: relative;
+
+        .header__wrapper__icon__cart--added {
+       
+        position: absolute;
+        /* padding: 3px; */
+        border-radius: 50%;
+        background-color: #fc4c4c;
+        top: -3px;
+        /* text-align: center; */
+        right: -8px;
+        text-align: center;
+        width: 18px;
+        height: 18px;
+        }
+    }
+
 
     input {
         outline: none;

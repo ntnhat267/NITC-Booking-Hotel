@@ -13,12 +13,10 @@ import { menuActions } from "features/menu/menuSlice";
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import MenuIcon from '@mui/icons-material/Menu';
-import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 
 import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
 import logo from "../../assets/images/logo2.png";
 
 import "./Header.scss";
@@ -40,6 +38,8 @@ const Header = () => {
   }
 
   const isDarkMode = useSelector((state) => state.theme.isDarkMode)
+  const cartList = useSelector((state) => state.cart.cartItems)
+  
 
   let activeStyle = {
     borderBottom: "1px solid",
@@ -119,7 +119,8 @@ const Header = () => {
             </div> */}
           </div>
           <div className="header__wrapper__icon__cart header__wrapper__icon--btn"  onClick={HandleShowCartUi}>
-            <ShoppingCartIcon sx={{ fontSize: { xs: 20, lg: 25 } }} />
+            <ShoppingCartIcon sx={{ fontSize: { xs: 15, lg: 25 } }}></ShoppingCartIcon>
+            <span className="header__wrapper__icon__cart--added">{cartList.length}</span>
           </div>
           <div className="header__wrapper__icon__login">
             {/* <div className="header__wrapper__icon__search header__wrapper__icon--btn" >

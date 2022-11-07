@@ -5,6 +5,7 @@ import { fetchServices, getServicesError, getServicesStatus, selectAllServices }
 
 import Loading from 'components/UI/Loading/Loading';
 import Slider from 'components/UI/Slider/Slider';
+import ServiceSecond from 'components/UI/ServiceSecond/ServiceSecond';
 
 function ServicesList({main}) {
 
@@ -43,7 +44,7 @@ function ServicesList({main}) {
                 ></Slider>
                 break;
             case "second":
-                content = <h1>hi</h1>
+                content = <ServiceSecond services={services}/>
                 break;
             default:
                 break;
