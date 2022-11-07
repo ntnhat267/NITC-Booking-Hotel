@@ -1,14 +1,35 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
+import { useDispatch } from 'react-redux';
 
 import AllOutIcon from '@mui/icons-material/AllOut';
 import BedIcon from '@mui/icons-material/Bed';
 import BathtubIcon from '@mui/icons-material/Bathtub';
 
 import './RoomItem.scss'
+import { cartActions } from 'features/cart/cartSlice';
+
 
 function RoomItem({room}) {
-    console.log(room.id);
+    const dispatch = useDispatch();
+   
+    const HanldeAddToCart = () => {
+        dispatch(
+            cartActions.addToCart({
+                name: room.name,
+                avatar: room.avatar,
+                beds: room.beds,
+                roomSize: room.roomSize,
+                occupancy:room.occupancy,
+                bathroom: room.bathroom,
+                price: room.price,
+                id: room.id,  
+            })
+        )
+
+    }
+
+
     return (
         <div className="room-item">
             <div className="room-img">
@@ -33,7 +54,9 @@ function RoomItem({room}) {
                     <li><BathtubIcon style={{ marginRight: "10px", fontSize: "20px" }} />{room.bathroom} Bathroom</li>
                 </ul>
                 <h3>${room.price} <span>/ Night</span></h3>
+                <button  onClick={HanldeAddToCart}>Add Cart</button>
             </div>
+            
         </div>
        
     );

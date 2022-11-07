@@ -15,7 +15,6 @@ function RoomPagination({rooms}) {
     const handleChange = (e, p) => {
         setPage(p);
         _DATA.jump(p);
-        console.log(p);
       };
 
     return (
