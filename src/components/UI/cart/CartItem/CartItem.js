@@ -5,6 +5,7 @@ import {  Row,Col } from 'reactstrap';
 import CloseIcon from '@mui/icons-material/Close';
 
 import { cartActions } from 'features/cart/cartSlice';
+import { toast } from 'react-toastify';
 
 function CartItem({cartItem}) {
 
@@ -14,6 +15,8 @@ function CartItem({cartItem}) {
         dispatch(cartActions.removeCart({
             id: cartItem.id
         }))
+
+        toast.success("Room Removed from Cart !");
     }
 
     return (

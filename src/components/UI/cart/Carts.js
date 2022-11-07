@@ -30,6 +30,7 @@ function Carts({transform, opacity}) {
             </div>
             <div className='view-cart__items'>
                 <Container>
+              
                     {cartList.map(cartItem => (
                         <CartItem cartItem={cartItem} key={cartItem.id}/>
                     ))}
