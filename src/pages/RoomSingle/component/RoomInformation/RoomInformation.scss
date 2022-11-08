@@ -1,0 +1,110 @@
+.room-information {
+    margin-top: 100px;
+    padding: 38px 20px;
+    border-radius: 120px;
+    box-shadow: 0 10px 40px 0 rgb(50 50 50 / 10%);
+    .room-information__item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            font-size: 20px;
+            color: #687693;
+        }
+        h2 {
+            font-size: 20px;
+            color: #303443;
+            font-weight: 750;
+
+        }
+
+        h5 {
+            color: #687693;
+            font-size: 15px;
+            font-weight: 630;
+            line-height: 0;
+            display: flex;
+            align-items: center;
+            span {
+                display: contents;
+                color: #fc4c4c;
+                font-size: 32px;
+                font-weight: 650;
+            }
+        }
+
+       
+
+        &::after {
+            content: "";
+            position: absolute;
+            border: 0.5px solid #ddd;
+            top: 50%;
+            right: 0;
+            height: 78%;
+            transform: translateY(-50%);
+        }
+        &:last-child::after{
+            display: none;
+        }
+    }
+
+
+
+    @media only screen and (max-width: 1200px) {
+        .room-information__item  {
+            span {
+                font-size: 16px;
+                
+            }
+            h2 {
+                font-size: 12px;
+            }
+
+            h5 {
+                span {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 993px) {
+        .room-information__item {
+
+           padding: 20px;
+            h2 {
+                margin-bottom: 0;
+                font-size: 20px;
+            }
+
+            span {
+                font-size: 20px;
+            }
+
+            h5 {
+
+                font-size: 21px;
+                line-height: 1;
+                span {
+                    font-size: 40px;
+                }
+            }
+
+            &::after {
+                // display: none;
+                height: 1%;
+                width: 80%;
+                left: 50%;
+                bottom: 0;
+                top:unset;
+                transform: translateX(-50%);
+            }
+        } 
+    }
+
+
+}

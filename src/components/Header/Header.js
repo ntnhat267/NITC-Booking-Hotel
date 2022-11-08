@@ -28,8 +28,8 @@ const Header = () => {
   const dispatch = useDispatch()
     
   const HandleShowCartUi = () => {
-      dispatch(cartActions.toggleCart());
-    };
+    dispatch(cartActions.toggleCart());
+  };
   const HandleDarkMode = () => {
     dispatch(themeActions.toggleTheme())
   }
@@ -55,6 +55,7 @@ const Header = () => {
 
       else {
         header.current.style.background = ' transparent'
+        
       }
     }
     // window.removeEventListener('scroll', onScroll);
@@ -89,7 +90,6 @@ const Header = () => {
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
               end
             >
-
               {item.display}
             </NavLink>
           ))}
@@ -97,7 +97,6 @@ const Header = () => {
         <Col xl='3' lg='2' md='3' sm='3' xs='3' className='header__wrapper__icon p-0  d-flex justify-content-end'>
           <div 
             className="header__wrapper__icon__tumbler header__wrapper__icon--btn " 
-            // style={{background: 'transparent'}}
             onClick={HandleDarkMode}
           >
             <div className={isDarkMode ? 'tumbler' : 'tumbler tumbler--dark-mode'}></div>
@@ -120,7 +119,7 @@ const Header = () => {
           </div>
           <div className="header__wrapper__icon__cart header__wrapper__icon--btn"  onClick={HandleShowCartUi}>
             <ShoppingCartIcon sx={{ fontSize: { xs: 15, lg: 25 } }}></ShoppingCartIcon>
-            <span className="header__wrapper__icon__cart--added">{cartList.length}</span>
+            {cartList.length < 1 ? undefined : <span className="header__wrapper__icon__cart--added">{cartList.length}</span>}
           </div>
           <div className="header__wrapper__icon__login">
             {/* <div className="header__wrapper__icon__search header__wrapper__icon--btn" >

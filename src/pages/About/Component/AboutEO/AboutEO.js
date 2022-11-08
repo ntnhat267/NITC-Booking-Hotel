@@ -3,6 +3,7 @@ import StarIcon from "@mui/icons-material/Star";
 import './AboutEO.scss'
 // import '../../../../'
 import AboutEOimg from "../../../../assets/images/about.jpg";
+import { NavLink } from "react-router-dom";
 const AboutEO = () => {
   return (
     <section className="aboutEO-padding">
@@ -57,9 +58,10 @@ const AboutEO = () => {
                         <h3>$2500</h3>
                       </div>
                     </div>
-                    <a className="aboutEO-theme-btn" href="">
-                        Book Now
-                    </a>
+                    <NavLink to="/room" className="aboutEO-theme-btn">
+                      Book Now
+                    </NavLink>
+                   
                   </div>
                 </div>
               </div>

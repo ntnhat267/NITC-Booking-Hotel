@@ -2,12 +2,15 @@ import React from 'react';
 import { Container } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
+
 import CloseIcon from '@mui/icons-material/Close';
+import SentimentVeryDissatisfiedIcon from '@mui/icons-material/SentimentVeryDissatisfied';
 
 import { cartActions } from 'features/cart/cartSlice';
 
-import './Carts.scss'
 import CartItem from './CartItem/CartItem';
+
+import './Carts.scss'
 function Carts({transform, opacity}) {
     
     const dispatch = useDispatch()
@@ -30,8 +33,12 @@ function Carts({transform, opacity}) {
             </div>
             <div className='view-cart__items'>
                 <Container>
-              
-                    {cartList.map(cartItem => (
+
+                    {cartList.length < 1 ? 
+                        <span className='view-cart__items--no-item d-flex align-items-center justify-content-evenly'>
+                            No item add to the cart <SentimentVeryDissatisfiedIcon sx={{fontSize: 25}} />
+                        </span> 
+                        : cartList.map(cartItem => (
                         <CartItem cartItem={cartItem} key={cartItem.id}/>
                     ))}
                 </Container>
