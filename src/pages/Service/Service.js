@@ -7,9 +7,12 @@ import ServicesList from 'features/service/ServicesList';
 
 function Service(props) {
     return (
-        <Helmet title='Serive'>
+        <Helmet title='Serive' >
             <PageTitle pagetitle={"Service"} pagesub={"Serive"}/>
-            <ServicesList main={"main"} style={{padding: "50px 0"}}/>
+            <div style={{margin:"100px 0"}}>
+            <ServicesList main={"main"} />
+
+            </div>
             <Newslatter />
         </Helmet>
     );

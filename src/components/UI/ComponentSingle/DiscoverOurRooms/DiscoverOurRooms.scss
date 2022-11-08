@@ -1,0 +1,50 @@
+.widget-title {
+    color: #303443;
+    font-family: Futura PT;
+    font-size: 23px;
+
+    font-weight: 700;
+    margin: 20px 0 1.3em;
+    padding-bottom: 20px;
+    position: relative;
+    text-transform: capitalize;
+
+    &::after, &::before{
+        content: '';
+        position: absolute;
+        border-radius: 20px;
+        height: 5px;
+        bottom: 0;
+
+    }
+    &::after {
+        width: 15%;
+        background-color: #fc4c4c;
+        left: 0;
+    }
+
+    &::before {
+        width: 84%;
+        background-color: #f2f2f2;
+        left: 16%;
+    }
+}
+
+.discover-our-rooms {
+    .room-area {
+        padding: 0;
+    }
+
+    
+
+    .discover-our-rooms__item {
+        width: 33%;
+        height: 100px;
+        margin: 7px 0;
+        cursor: pointer;
+        img {
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+}

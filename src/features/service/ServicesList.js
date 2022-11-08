@@ -40,7 +40,7 @@ function ServicesList({main}) {
                                 800: {slidesPerView: 2},
                                 500: {slidesPerView: 1},
                             }}
-                            style={{padding: "200px 0"}}
+                           
                 ></Slider>
                 break;
             case "second":

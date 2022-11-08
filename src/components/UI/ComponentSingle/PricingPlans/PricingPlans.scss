@@ -1,0 +1,36 @@
+.pricing-plans {
+    .pricing-plans__table {
+        overflow-x: auto ;
+        th {
+            font-size: 17px;
+            color: #283a5e;
+            font-weight: 600;
+
+        }
+        td {
+            font-size: 16px;
+            color: #6a7998;
+        }
+        th,td {
+            border: 1px solid #ebebeb;
+            // color: #6a7998;
+            font-weight: 500;
+            padding: 10px;
+            text-align: center;
+            width: 5%;
+        }
+    } 
+
+    .pricing-plans__table--wrap {
+        margin: 40px 0;
+    }
+
+    @media only screen and (max-width: 428px ) {
+        .pricing-plans__table--wrap {
+            overflow-x: scroll;
+        }
+        .pricing-plans__table th,td {
+            font-size: 13px;
+        }
+    }  
+}
