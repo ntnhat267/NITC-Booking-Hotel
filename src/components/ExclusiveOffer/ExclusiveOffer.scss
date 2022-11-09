@@ -57,15 +57,12 @@
 .exclusiveoffer-info-left span{
     color: black;
 }
+@media (min-width:992px){
 .offset-lg-4{
   margin-left: 35%;
 }
-.col-lg-6{
-  width:50%;
 }
-.col-xl-5{
-  width: 42%;
-}
+
 
 .exclusiveoffer-info-right{
   padding-left: 30px;
