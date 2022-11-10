@@ -57,11 +57,8 @@
 .exclusiveoffer-info-left span{
     color: black;
 }
-@media (min-width:992px){
-.offset-lg-4{
-  margin-left: 35%;
-}
-}
+
+
 
 
 .exclusiveoffer-info-right{
@@ -81,12 +78,43 @@
 }
 .theme-btn{
   background: #fc4c4c;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: 30px;
+  padding: 17px 50px 17px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  border:none;
+}
+.theme-btn a{
+  color:#fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+@media(max-width: 1400px){
+  .theme-btn{
+    background: #fc4c4c;
   color: #fff;
   font-size: 1.5rem;
   font-weight: 600;
   margin-left: 30px;
-  padding: 17px 50px 0px 50px;
   border-radius: 6px;
+  padding-right: 30px;
+  padding-left:30px;
+  }
+}
+@media(max-width: 400px){
+  .theme-btn{
+    background: #fc4c4c;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 6px;
+  margin:100px 0px 0px -260px ;
+  padding-bottom: 20px;
+  border:none;
+  
+  }
 }
 .theme-btn:hover{
   background:red;
