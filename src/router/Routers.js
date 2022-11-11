@@ -13,6 +13,8 @@ import Service from 'pages/Service/Service';
 import ServiceSingle from 'pages/ServiceSingle/ServiceSingle';
 import Login from 'pages/Login/Login';
 import BlogSingle from 'pages/BlogSingle/BlogSingle';
+import Cart from 'pages/Cart/Cart';
+import Checkout from 'pages/Checkout/Checkout';
 
 
 const Routers = () => {
@@ -30,6 +32,8 @@ const Routers = () => {
                 <Route path='/blog' element={<Blog/>}></Route>
                 <Route path='/blog/:blogId' element={<BlogSingle/>}></Route>
                 <Route path='/contact' element={<Contact/>}></Route>
+                <Route path='/cart' element={<Cart/>}></Route>
+                <Route path='/checkout' element={<Checkout/>}></Route>
                 <Route path='/login' element={<Login/>}></Route>
                 <Route path='/*' element={ <Error/>}></Route>
 
