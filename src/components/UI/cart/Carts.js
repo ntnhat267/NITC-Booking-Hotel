@@ -55,10 +55,10 @@ function Carts({transform, opacity}) {
 
                     <div className='view-cart__checkout--btn'>
                         <div className='view-cart__checkout--btn--checkout d-flex justify-content-center'>
-                            <NavLink to=''>Checkout</NavLink>
+                            <NavLink to='/checkout'>Checkout</NavLink>
                         </div>
                         <div className='view-cart__checkout--btn--viewcart d-flex justify-content-center'>
-                            <NavLink to=''>View Cart</NavLink>
+                            <NavLink to='/cart'>View Cart</NavLink>
                         </div>
                         
                     </div>

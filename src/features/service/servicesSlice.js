@@ -20,7 +20,7 @@ const servicesSlice = createSlice({
     reducers: {},
     extraReducers(builer){
         builer
-            .addCase(fetchServices.pending, (state, action) => {
+            .addCase(fetchServices.pending, (state) => {
                 state.status = 'loading'
             })
             .addCase(fetchServices.fulfilled, (state, action) => {

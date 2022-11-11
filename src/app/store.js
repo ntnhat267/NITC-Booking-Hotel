@@ -5,6 +5,9 @@ import themeReducer from '../features/theme/themeSlice'
 import menuReducer from '../features/menu/menuSlice'
 import roomsReducer from '../features/rooms/roomsSlice'
 import servicesReducer from '../features/service/servicesSlice'
+import blogsReducer from '../features/blogs/blogsSlice'
+
+
 export const store = configureStore({
   reducer: {
 
@@ -13,5 +16,6 @@ export const store = configureStore({
     menu: menuReducer,
     rooms: roomsReducer,
     services: servicesReducer,
+    blogs : blogsReducer,
   },
 });

@@ -21,7 +21,7 @@ const roomsSlice =  createSlice({
     reducers: {},
     extraReducers(builer){
         builer
-            .addCase(fetchRooms.pending, (state, action) => {
+            .addCase(fetchRooms.pending, (state) => {
                 state.status = 'loading'
             })
             .addCase(fetchRooms.fulfilled, (state, action) => {

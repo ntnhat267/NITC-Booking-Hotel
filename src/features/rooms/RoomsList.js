@@ -44,7 +44,7 @@ const RoomsList = ({main}) => {
                 break;
             case "second":
                 content = <Row>
-                    <RoomPagination rooms={rooms}/>
+                    <RoomPagination single={rooms}/>
                 </Row>
                 break;
             case "tertiary":
@@ -58,10 +58,7 @@ const RoomsList = ({main}) => {
                                 window.scrollTo(10, 0);    
                             }}
                         >
-                            
-                                <img src={room.avatar} alt={room.name} className='h-100 w-100'></img>
-                               
-                            
+                            <img src={room.avatar} alt={room.name} className='h-100 w-100'></img>
                         </Col>)}
                 </Row>
                 break;
