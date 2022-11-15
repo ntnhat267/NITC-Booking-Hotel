@@ -44,7 +44,7 @@ const RoomsList = ({main}) => {
                 break;
             case "second":
                 content = <Row>
-                    <RoomPagination single={rooms}/>
+                    <RoomPagination rooms={rooms}/>
                 </Row>
                 break;
             case "tertiary":
