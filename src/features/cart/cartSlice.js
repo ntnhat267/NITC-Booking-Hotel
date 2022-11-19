@@ -24,7 +24,7 @@ export const cartSlice = createSlice({
                     avatar: newItems.avatar,
                     beds: newItems.beds,
                     roomSize: newItems.roomSize,
-                    // occupancy:newItems.occupancy,
+                    occupancy:newItems.occupancy,
                     bathroom: newItems.bathroom,
                     price: newItems.price,
                     id: newItems.id,
@@ -55,7 +55,17 @@ export const cartSlice = createSlice({
             state.totalPrice = state.cartItems.reduce((total, item) => {
                 return total + Number(item.price)*Number(item.quantity)
             },0)
-        }   
+        },   
+
+        //delete cart
+        deleteCart(state, action) {
+            const {id} = action.payload;
+            state.cartItems =  state.cartItems.filter(item => item.id !== id )
+
+            state.totalPrice = state.cartItems.reduce((total, item) => {
+                return total + Number(item.price)*Number(item.quantity)
+            },0)
+        }
     }
 })
 
