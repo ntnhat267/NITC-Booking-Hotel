@@ -63,6 +63,10 @@ const Header = () => {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  const handleClick = () => {
+      window.scrollTo(10, 0);
+  }
+
   
   return (
     <header className="header" ref={header}>
@@ -86,9 +90,10 @@ const Header = () => {
             <NavLink
               to={item.path}
               key={index}
-              className="text-white"
+              // className="text-white"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
               end
+              onClick={handleClick}
             >
               {item.display}
             </NavLink>

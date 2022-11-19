@@ -1,12 +1,13 @@
 import React from "react";
 import StarIcon from "@mui/icons-material/Star";
 import "./ExclusiveOffer.scss"
+import { NavLink } from "react-router-dom";
 
 const ExclusiveOffer = () => {
   return (
-    <div className="homebody">
+    <div className="homebody" style={{}}>
       <div className="container homebody-wrapper">
-        <div className="col-md-5 col-lg-6 col-md-8 col-12 offset-xl-6 offset-lg-4 offset-md-2">
+        <div className="col-xl-5 col-lg-6 col-md-8 col-12 offset-xl-6 offset-lg-4 offset-md-2">
           <div className="exclusiveoffer-content">
             <div className="exclusiveoffer-title">
               <span>Exclusive Offer</span>
@@ -40,9 +41,13 @@ const ExclusiveOffer = () => {
                   <p>Only</p>
                   <h3>$2500</h3>
                 </div>
-                <a className="theme-btn" href="/room">
-                  Book Now
-                </a>
+                <div className="theme-btn-wrap">
+                  <button className="theme-btn">
+                    <NavLink to='/room'>
+                      Book Now
+                    </NavLink>
+                  </button>
+                </div>
               </div>
             </div>
           </div>

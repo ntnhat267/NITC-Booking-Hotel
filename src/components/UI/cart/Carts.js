@@ -17,6 +17,7 @@ function Carts({transform, opacity}) {
 
     const HandleShowCartUi = () => {
         dispatch(cartActions.toggleCart());
+        window.scrollTo(10, 0);
       };
     
     
@@ -55,10 +56,10 @@ function Carts({transform, opacity}) {
 
                     <div className='view-cart__checkout--btn'>
                         <div className='view-cart__checkout--btn--checkout d-flex justify-content-center'>
-                            <NavLink to='/checkout'>Checkout</NavLink>
+                            <NavLink to='/checkout' onClick={HandleShowCartUi}>Checkout</NavLink>
                         </div>
                         <div className='view-cart__checkout--btn--viewcart d-flex justify-content-center'>
-                            <NavLink to='/cart'>View Cart</NavLink>
+                            <NavLink to='/cart' onClick={HandleShowCartUi}>View Cart</NavLink>
                         </div>
                         
                     </div>
