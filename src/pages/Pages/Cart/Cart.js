@@ -1,15 +1,15 @@
 import React from 'react';
 import Newslatter from '../../../components/Newslatter/Newslatter';
 import PageTitle from '../../../components/PageTitle/PageTitle'
-import ErrorPage from './ErrorPage'
+import CartPage from './CartPage'
 
-const Error = () => {
+const Cart = () => {
     return (
         <>
-            <PageTitle pagetitle={'404'} pagesub={'404'} />
-            <ErrorPage />
+            <PageTitle pagetitle={'Cart'} pagesub={'Cart'} />
+            <CartPage />
             <Newslatter nClass={'section-bg'} />
         </>
     )
 };
-export default Error;
+export default Cart;
